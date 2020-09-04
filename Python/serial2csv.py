@@ -11,7 +11,7 @@ file = open('telegramm.csv', 'w+', newline ='')
   
 # writing the data into the file 
 with file:
-    header = ['time_decimal', 'sensor1', 'sensor2', 'sensor3', 'sensor4', 'sensor5', 'sensor6', 'sensor7', 'sensor8', 'sensor9', 'sensor10', 'sensor11', 'sensor12', 'sensor13', 'sensor14', 'date', 'time']
+    header = ['time_decimal', 'wind_speed', 'wind_direction', 'temperature1', 'rel_humidity', 'air_pressure', 'radiation', 'precipitation', 'leaf_moistening', 'tensiometer', 'temperature2', 'temperature3', 'temperature4', 'special_input1', 'special_input2', 'date', 'time']
     write = csv.writer(file) 
     writer = csv.DictWriter(file, fieldnames = header) 
       
