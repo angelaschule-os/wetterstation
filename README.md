@@ -22,4 +22,5 @@ Software-Version: 3.12
 
 ## Links
 
+- https://opensensemap.org/
 - https://www.heise.de/make/artikel/Wettermessgeraet-fuer-OpenSenseMap-einrichten-2803135.html
