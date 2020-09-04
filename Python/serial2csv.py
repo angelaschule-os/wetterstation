@@ -1,3 +1,9 @@
+#!/usr/bin/env python
+# encoding: utf-8
+
+# SPDX-FileCopyrightText: © 2020 Bjoern Schilberg <bjoern.schilberg@angelaschule-osnabrueck.net>
+# SPDX-License-Identifier: Apache-2.0
+
 import os
 import csv
 

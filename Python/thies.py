@@ -1,3 +1,9 @@
+#!/usr/bin/env python
+# encoding: utf-8
+
+# SPDX-FileCopyrightText: © 2017 Matthias Messmer <matthias.messmer@angelaschule-osnabrueck.net>
+# SPDX-License-Identifier: Apache-2.0
+
 from serial import *
 from time import sleep
 
