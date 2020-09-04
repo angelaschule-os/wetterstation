@@ -10,9 +10,12 @@ Seit Dezember 2006 werden Außenlufttemperatur und Luftfeuchte, Globalstrahlung,
 
 
 ## DATALOGGER
+
 ```
 DATALOGGER
 MeteoLOG TDL 14
 Order-No.:9.1740.1X.01X
-Software-Version: as of 3.12 
+Software-Version: 3.12 
 ```
+
+- [Documentation](docs/9.1740.xx.xxx_TDL14_V3.12_eng.pdf)
