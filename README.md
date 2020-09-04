@@ -18,4 +18,8 @@ Order-No.:9.1740.1X.01X
 Software-Version: 3.12 
 ```
 
-- [Documentation](docs/9.1740.xx.xxx_TDL14_V3.12_eng.pdf)
+[Documentation](docs/9.1740.xx.xxx_TDL14_V3.12_eng.pdf)
+
+## Links
+
+- https://www.heise.de/make/artikel/Wettermessgeraet-fuer-OpenSenseMap-einrichten-2803135.html
