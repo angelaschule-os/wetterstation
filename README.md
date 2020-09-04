@@ -4,11 +4,11 @@ Seit Dezember 2006 werden Außenlufttemperatur und Luftfeuchte, Globalstrahlung,
 
 | Sensoren            | Einheit | Produktname         |
 | ------------------- | --------| ------------------- |
-| Außenlufttemperatur | (°C)    |                     |
-| Außenluftfeuchte    | (%)     |                     |
-| Globalstrahlung     | (W/m²)  |                     |
-| Luftdruck           | (hPa)   | Barogeber PTB 100 A |
-| Regen               | (mm/m²) |                     |
+| Außenlufttemperatur | °C      |                     |
+| Außenluftfeuchte    | %       |                     |
+| Globalstrahlung     | W/m²    |                     |
+| Luftdruck           | hPa     | Barogeber PTB 100 A |
+| Regen               | mm/m²   |                     |
 
 
 ## DATALOGGER
