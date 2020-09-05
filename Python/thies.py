@@ -8,6 +8,7 @@ from serial import Serial, SEVENBITS, PARITY_EVEN, STOPBITS_ONE
 from sys import stdout
 
 # https://pyserial.readthedocs.io/en/latest/pyserial_api.html#serial.Serial
+# See docs/Datalogger MeteoLOG TDL14.pdf page 28.
 dmm = Serial(
     port='/dev/ttyUSB0', 
     baudrate=9600, 
@@ -28,7 +29,7 @@ dmm.dtr = True
 
 while True:
     # https://pyserial.readthedocs.io/en/latest/pyserial_api.html#serial.Serial.readline
-    # reads data until a newline. See docs/Datalogger MeteoLOG TDL14.pdf page 20.
+    # Lines are concluded with "CR LF". See docs/Datalogger MeteoLOG TDL14.pdf page 20.
     s = dmm.readline()
     print(s)
     # You want unbuffered output whenever you want to ensure that the output
