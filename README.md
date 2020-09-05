@@ -24,6 +24,16 @@ Software-Version: 3.12
 
 [Documentation](docs/9.1740.xx.xxx_TDL14_V3.12_eng.pdf)
 
+## Test
+
+```shell
+screen /dev/ttyUSB0
+```
+
+```shell
+cat /dev/ttyUSB0
+```
+
 ## Links
 
 - https://opensensemap.org/
