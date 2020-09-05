@@ -26,4 +26,6 @@ dmm.dtr = True
 while True:
     s = dmm.read(1000)
     print(s)
-#    sleep(0.1)
+    # You want unbuffered output whenever you want to ensure that the output
+    # has been written before continuing. 
+    sys.stdout.flush()
