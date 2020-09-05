@@ -27,8 +27,9 @@ dmm.rts = False
 dmm.dtr = True
 
 while True:
-    # https://pyserial.readthedocs.io/en/latest/pyserial_api.html#serial.Serial.read
-    s = dmm.read(1000)
+    # https://pyserial.readthedocs.io/en/latest/pyserial_api.html#serial.Serial.readline
+    # reads data until a newline. See docs/Datalogger MeteoLOG TDL14.pdf page 20.
+    s = dmm.readline()
     print(s)
     # You want unbuffered output whenever you want to ensure that the output
     # has been written before continuing. 
