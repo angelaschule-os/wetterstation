@@ -4,9 +4,10 @@
 # SPDX-FileCopyrightText: © 2017 Matthias Messmer <matthias.messmer@angelaschule-osnabrueck.net>
 # SPDX-License-Identifier: Apache-2.0
 
-from serial import *
-from time import sleep
+from serial import Serial
+from sys import stdout
 
+# https://pyserial.readthedocs.io/en/latest/pyserial_api.html#serial.Serial
 dmm = Serial(
     port='/dev/ttyUSB0', 
     baudrate=9600, 
@@ -20,12 +21,15 @@ dmm = Serial(
     dsrdtr=False, 
     inter_byte_timeout=None
 )
+# https://pyserial.readthedocs.io/en/latest/pyserial_api.html#serial.Serial.rts
 dmm.rts = False
+# https://pyserial.readthedocs.io/en/latest/pyserial_api.html#serial.Serial.dtr
 dmm.dtr = True
 
 while True:
+    # https://pyserial.readthedocs.io/en/latest/pyserial_api.html#serial.Serial.read
     s = dmm.read(1000)
     print(s)
     # You want unbuffered output whenever you want to ensure that the output
     # has been written before continuing. 
-    sys.stdout.flush()
+    stdout.flush()
