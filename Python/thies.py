@@ -30,6 +30,7 @@ dmm.dtr = True
 while True:
     # https://pyserial.readthedocs.io/en/latest/pyserial_api.html#serial.Serial.readline
     # Lines are concluded with "CR LF". See docs/Datalogger MeteoLOG TDL14.pdf page 20.
+    # https://developer.mozilla.org/de/docs/Glossary/CRLF
     s = dmm.readline()
     print(s)
     # You want unbuffered output whenever you want to ensure that the output
