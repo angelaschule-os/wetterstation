@@ -4,7 +4,7 @@
 # SPDX-FileCopyrightText: © 2017 Matthias Messmer <matthias.messmer@angelaschule-osnabrueck.net>
 # SPDX-License-Identifier: Apache-2.0
 
-from serial import Serial
+from serial import Serial, SEVENBITS, PARITY_EVEN, STOPBITS_ONE
 from sys import stdout
 
 # https://pyserial.readthedocs.io/en/latest/pyserial_api.html#serial.Serial
