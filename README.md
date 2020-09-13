@@ -8,7 +8,6 @@ aufgezeichnet.
   - [openSenseMap](#opensensemap)
   - [Messsystem](#messsystem)
     - [Sensoren](#sensoren)
-  - [Test](#test)
   - [Links](#links)
 
 ## openSenseMap
@@ -30,25 +29,18 @@ Software-Version: 3.12
 
 ### Sensoren
 
-| Sensoren            | Einheit | Produktname         |
-| ------------------- | --------| ------------------- |
-| Außenlufttemperatur | °C      |                     |
-| Außenluftfeuchte    | %       |                     |
-| Globalstrahlung     | W/m²    |                     |
-| Luftdruck           | hPa     | Barogeber PTB 100 A |
-| Regen               | mm/m²   |                     |
+| Sensoren            | Einheit | Produktname                                                 |
+| ------------------- | --------| ------------------------------------------------------------|
+| Außenlufttemperatur | °C      | Hygro-Thermo Transmitter compact Part number: 1.1005.54.??? |
+| Außenluftfeuchte    | %       | Hygro-Thermo Transmitter compact Part number: 1.1005.54.??? |
+| Globalstrahlung     | W/m²    | Kipp & Zonen CMP 3 Serial number: 050047                    |
+| Luftdruck           | hPa     | Barogeber PTB 100 A Part number: 3.1158.00.073              |
+| Regen               | mm/m²   | Niederschlagsgeber                                          |
+| Windgeschwindigkeit | m/s     | Windgeber - compact |
+| Windrichtung        | °       | Windrichtungsgeber - compact |
+
 
 [Documentation](docs/9.1740.xx.xxx_TDL14_V3.12_eng.pdf)
-
-## Test
-
-```shell
-screen /dev/ttyUSB0
-```
-
-```shell
-cat /dev/ttyUSB0
-```
 
 ## Links
 
