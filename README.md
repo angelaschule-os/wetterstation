@@ -1,8 +1,24 @@
 # wetterstation
 
-Seit Dezember 2006 werden Außenlufttemperatur und Luftfeuchte, Globalstrahlung, Regen und Luftdruck von der Wetterstation der Schule aufgezeichnet.
+Seit Dezember 2006 werden Außenlufttemperatur und Luftfeuchte,
+Globalstrahlung, Regen und Luftdruck von der Wetterstation der Schule
+aufgezeichnet.
 
-## Messsystem / DATALOGGER
+- [wetterstation](#wetterstation)
+  - [openSenseMap](#opensensemap)
+  - [Messsystem](#messsystem)
+    - [Sensoren](#sensoren)
+  - [Test](#test)
+  - [Links](#links)
+
+## openSenseMap
+
+Die Daten der Wetterstation können zukünftig auf
+[openSenseMap](https://opensensemap.org/) gefunden werden:
+
+<https://opensensemap.org/explore/5f5dc63f84e5a2001b1d5dbc>
+
+## Messsystem
 
 ```
 Thies CLIMA
