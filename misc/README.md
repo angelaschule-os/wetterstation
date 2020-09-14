@@ -34,3 +34,16 @@ Start `websocketd` and tell it about your program:
 
 ```shell
 ./websocketd --port=8080 ./thies.py
+```
+
+### Testing service
+
+In Developer Tools Web Console.
+
+```javascript
+ws = new WebSocket("ws://100.80.119.20:8080/");
+
+ws.onmessage = function (e) {
+console.log(e.data);
+};
+```
