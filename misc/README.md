@@ -2,12 +2,16 @@
 
 ## Test
 
-```shell
-screen /dev/ttyUSB0
-```
+Change terminal line settings and baud rate.
 
 ```shell
-cat /dev/ttyUSB0
+stty -F /dev/ttyUSB0 raw 9600 cs7 parenb -parodd -cstopb -crtscts && cat /dev/ttyUSB0
+```
+
+To output data from the device to the screen and to a text file, need to use tee:
+
+```shell
+cat /dev/ttyUSB0|tee output.txt
 ```
 
 ## Streaming sensor data via websockets
@@ -33,7 +37,7 @@ unzip -d . websocketd-0.3.0-linux_amd64.zip websocketd
 Start `websocketd` and tell it about your program:
 
 ```shell
-./websocketd --port=8080 ./thies.py
+./websocketd --port=8080 cat /dev/ttyUSB0
 ```
 
 ### Testing service
