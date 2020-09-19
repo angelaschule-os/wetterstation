@@ -1,9 +1,15 @@
 # Serial forwarding
 
-On raspberry pi:
 
+On the raspberry pi:
 
-pi@raspberrypi:~ $ socat /dev/ttyUSB0 tcp4-listen:23366
+```shell
+ssh pi@raspberry socat /dev/ttyUSB0 tcp4-listen:23366
+```
+
 
 On the other pc:
-socat  pty,link=tty0,raw  tcp:100.80.119.20:23366
+
+```shell
+socat  pty,link=tty0,raw  tcp:raspberry:23366
+```
