@@ -10,11 +10,13 @@ import (
 
 func main() {
 	options := serial.OpenOptions{
-		PortName:        "/dev/ttyUSB0",
-		BaudRate:        9600,
-		DataBits:        7,
-		StopBits:        1,
-		MinimumReadSize: 4,
+		PortName:          "/dev/ttyUSB0",
+		BaudRate:          9600,
+		DataBits:          7,
+		StopBits:          1,
+		MinimumReadSize:   4,
+		RTSCTSFlowControl: false,
+		ParityMode:        serial.PARITY_ODD,
 	}
 	serialPort, err := serial.Open(options)
 	if err != nil {
