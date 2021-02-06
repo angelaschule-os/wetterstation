@@ -33,11 +33,11 @@ Software-Version: 3.12
 | ------------------- | --------| ------------------------------------------------------------|
 | Außenlufttemperatur | °C      | Hygro-Thermo Transmitter compact Part number: 1.1005.54.??? |
 | Außenluftfeuchte    | %       | Hygro-Thermo Transmitter compact Part number: 1.1005.54.??? |
-| Globalstrahlung     | W/m²    | Kipp & Zonen CMP 3 Serial number: 050047                    |
+| Globalstrahlung     | W/m²    | Kipp & Zonen CMP 3 Serial number: 050140                    |
 | Luftdruck           | hPa     | Barogeber PTB 100 A Part number: 3.1158.00.073              |
 | Regen               | mm/m²   | Niederschlagsgeber                                          |
-| Windgeschwindigkeit | m/s     | Windgeber - compact |
-| Windrichtung        | °       | Windrichtungsgeber - compact |
+| Windgeschwindigkeit | m/s     | Windgeber - compact Part number: 4.3519.00.000 |
+| Windrichtung        | °       | Windrichtungsgeber - compact Part number: 4.3129.00.000  |
 
 
 [Documentation](docs/9.1740.xx.xxx_TDL14_V3.12_eng.pdf)
