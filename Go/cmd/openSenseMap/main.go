@@ -78,7 +78,7 @@ func backgroundTask(mode *serial.Mode, opensensemapAPI string) {
 
 			log.Println("Temperature", senseArray[3])
 
-			values := map[string]string{"601e947fe443a0001b961372": senseArray[1], "601e947fe443a0001b961373": senseArray[2], "601e947fe443a0001b961374": senseArray[3], "601e947fe443a0001b961375": senseArray[4], "601e947fe443a0001b961376": senseArray[5], "601e947fe443a0001b961377": senseArray[6], "601e947fe443a0001b961378": senseArray[7]}
+			values := map[string]string{WIND_VELOCITY: senseArray[1], WIND_DIRECTION: senseArray[2], TEMPERATURE: senseArray[3], REL_HUMIDITY: senseArray[4], AIR_PRESSURE: senseArray[5], RADIATION: senseArray[6], PRECIPITATION: senseArray[7]}
 			jsonValue, _ := json.Marshal(values)
 
 			//var jsonStr = []byte(`{"601e947fe443a0001b961374":` + senseArray[3] + `}`)
